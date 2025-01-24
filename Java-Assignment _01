@@ -1,1 +1,63 @@
 
+import java.util.Scanner;
+public class Assignment01 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the First number: ");
+        double num1 = scanner.nextDouble();  
+
+        System.out.print("Enter the Second number: ");
+        double num2 = scanner.nextDouble();  
+
+        System.out.println("Addition: " + (num1 + num2));
+        System.out.println("Subtraction: " + (num1 - num2));
+        System.out.println("Multiplication: " + (num1 * num2));
+
+        if (num2 != 0) {
+            System.out.println("Division: " + (num1 / num2));
+        } else {
+            System.out.println("Division: Cannot divide by zero");
+        }
+
+        //* / Question 2: Calculate the square of a number
+         System.out.print("Enter a number to calculate its square: ");
+        double num3 = scanner.nextDouble();  // Read the number
+        System.out.println("Square: " + (num3 * num3));
+
+        //Question 3:// Q3: Perimeter of a Rectangle
+        System.out.println("\nEnter length and width of the rectangle:");
+        double length = scanner.nextDouble();
+        double width = scanner.nextDouble();
+        System.out.println("Perimeter of Rectangle: " + (2 * (length + width)));    
+
+        //Q4: Area of a Rectangle
+         System.out.println("Area of Rectangle: " + (length * width));
+        
+
+         // Q5: Average of Three Numbers
+         System.out.println("\nEnter three numbers to calculate their average:");
+         double n1 = scanner.nextDouble();
+         double n2 = scanner.nextDouble();
+         double n3 = scanner.nextDouble();
+         System.out.println("Average: " + ((n1 + n2 + n3) / 3));
+
+
+         // Q6: Print Multiplication Table of 5
+        System.out.println("\nMultiplication Table of 5:");
+            for (int i = 1; i <= 10; i++) {
+                    System.out.println("5 x " + i + " = " + (5 * i));
+                }
+        
+         // Q7: Total and Percentage
+        System.out.println("\nEnter marks of three subjects:");
+        double marks1 = scanner.nextDouble();
+        double marks2 = scanner.nextDouble();
+        double marks3 = scanner.nextDouble();
+        double total = marks1 + marks2 + marks3;
+        double percentage = (total / 300) * 100; // Assuming each subject is out of 100
+        System.out.println("Total Marks: " + total);
+        System.out.println("Percentage: " + percentage + "%");
+
+        scanner.close();  // Close the scanner at the very end
+    }
+}
