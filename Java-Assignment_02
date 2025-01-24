@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Assignment02 {
+    public static void main(String[] args) {
+        // Numeric comparisons
+        boolean isEqual = (10 == 15);                    // Check if 10 is equal to 15
+        boolean isNotEqual = (20 != 25);                // Check if 20 is not equal to 25
+        boolean isGreater = (30 > 25);                  // Check if 30 is greater than 25
+        boolean isLess = (12 < 18);                     // Check if 12 is less than 18
+        boolean isGreaterOrEqual = (40 >= 40);          // Check if 40 is greater than or equal to 40
+        boolean isLessOrEqual = (7 <= 10);              // Check if 7 is less than or equal to 10
+
+        // String comparisons
+        boolean areStringsEqual = "hello".equals("world"); // Check if "hello" is equal to "world"
+        boolean areStringsNotEqual = !"apple".equals("orange"); // Check if "apple" is not equal to "orange"
+
+        // Print results
+        System.out.println("isEqual: " + isEqual);
+        System.out.println("isNotEqual: " + isNotEqual);
+        System.out.println("isGreater: " + isGreater);
+        System.out.println("isLess: " + isLess);
+        System.out.println("isGreaterOrEqual: " + isGreaterOrEqual);
+        System.out.println("isLessOrEqual: " + isLessOrEqual);
+        System.out.println("areStringsEqual: " + areStringsEqual);
+        System.out.println("areStringsNotEqual: " + areStringsNotEqual);
+        
+    }
+}
